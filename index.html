@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gogo React - React Admin Template</title>
+
+    <!-- Font Link -->
+    <link rel="stylesheet" href="./assets/css/font.css">
+
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+
+    <!-- Favicon Link -->
+    <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+
+    <!-- Calender -->
+     <link rel="stylesheet" href="./assets/css/calender.css">
+
+    <!-- Css Link -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<!-- https://gogo-react.coloredstrategies.com/app/dashboards/ecommerce -->
+
+<body>
+    <div class="page-wrapper">
+        <header>
+            <div class="row items-center justify-between">
+                <div class="navbar-left">
+                    <div class="toggle-menu">
+                        <a href="javascript:void(0);">
+                            <svg class="main" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 17">
+                                <rect x="0.48" y="0.5" width="7" height="1"></rect>
+                                <rect x="0.48" y="7.5" width="7" height="1"></rect>
+                                <rect x="0.48" y="15.5" width="7" height="1"></rect>
+                            </svg>
+
+                            <svg class="sub" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17">
+                                <rect x="1.56" y="0.5" width="16" height="1"></rect>
+                                <rect x="1.56" y="7.5" width="16" height="1"></rect>
+                                <rect x="1.56" y="15.5" width="16" height="1"></rect>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search">
+                        <span>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                    </div>
+                    <div class="lan">
+                        <a href="javascript:void(0);">
+                            <span>EN</span>
+                        </a>
+                        <nav>
+                            <ul>
+                                <li class="dropdown">
+                                    <a href="index.html">English - LTR</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="index.html">Español</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="index.html">English - RTL</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="buy">
+                        <a
+                            href="https://themeforest.net/cart/configure_before_adding/22544383?license=regular&irgwc=1&clickid=VJM0kU21bxyKRudUFv3RSwwXUkHXVZVBqSOl2A0&iradid=275988&irpid=1324459&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_1324459&utm_medium=affiliate&utm_source=impact_radius">buy</a>
+                    </div>
+                </div>
+                <div class="logo">
+                    <a href="javascript:void(0);">
+                        <img src="./assets/images/logo/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="navbar-right">
+                    <div class="toggle-switch">
+                        <a href="javascript:void(0);">
+                            <span></span>
+                        </a>
+                    </div>
+                    <div class="icons">
+                        <div class="grid">
+                            <a href="javascript:void(0);">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 22 22"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-grid">
+                                    <rect x="3" y="3" width="7" height="7"></rect>
+                                    <rect x="14" y="3" width="7" height="7"></rect>
+                                    <rect x="14" y="14" width="7" height="7"></rect>
+                                    <rect x="3" y="14" width="7" height="7"></rect>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="notification">
+                            <a href="javascript:void(0);">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-bell">
+                                    <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                                    <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                                </svg>
+                                <span>3</span>
+                            </a>
+                        </div>
+                        <div class="fullscreen">
+                            <a href="javascript:void(0);" id="expand">
+                                <i class="fa-solid fa-expand"></i>
+                                <i class="fa-solid fa-minimize"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <a href="javascript:void(0);">
+                            <span>Sarah Kortney</span>
+                            <img src="./assets/images/user-image/p-1.png" alt="Profile Photo">
+                        </a>
+                        <nav>
+                            <ul>
+                                <li class="dropdown">
+                                    <a href="index.html">Account</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="index.html">Features</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="index.html">History</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="index.html">Support</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="index.html">Sign out</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="page-body-wrapper">
+            <div class="sidebar">
+                <div class="menubar">
+                    <ul>
+                        <li class="dashboards">
+                            <a href="#">
+                                <i class="fa-solid fa-store"></i>
+                                <span>Dashboards</span>
+                            </a>
+                        </li>
+                        <li class="pages">
+                            <a href="#">
+                                <i class="fa-solid fa-desktop"></i>
+                                <span>Pages</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sub-menubar">
+                    <ul class="dashboards-dropdown">
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <span>Default</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-chart-pie"></i>
+                                <span>Analytics</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span>Ecommerce</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-regular fa-file"></i>
+                                <span>Content</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="pages-dropdown">
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <span>Authorization</span>
+                            </a>
+                            <div class="pages-subdropdown">
+                                <nav>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-solid fa-user-check"></i>
+                                                <span>Login</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-solid fa-user-plus"></i>
+                                                <span>Register</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-solid fa-user-check"></i>
+                                                <span>Forgot Password</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-solid fa-user-xmark"></i>
+                                                <span>Reset Password</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-angle-right"></i>
+                                <span>Product</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-angle-right"></i>
+                                <span>Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-angle-right"></i>
+                                <span>Blog</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-angle-right"></i>
+                                <span>Miscellaneous</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-body">
+                <div class="row row-gap-24">
+                    <div class="col-12">
+                        <div class="menu">
+                            <div class="heading">
+                                <h1>Ecommerce</h1>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">Dashboards</a>
+                                </li>
+                                <li>
+                                    <a href="#">Ecommerce</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="order-list">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p>Pending Orders</p>
+                                    <span>14</span>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="order-list">
+                                    <i class="fa-solid fa-basket-shopping"></i>
+                                    <p>Completed Orders</p>
+                                    <span>32</span>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="order-list">
+                                    <i class="fa-solid fa-arrows-rotate"></i>
+                                    <p>Refund Requests</p>
+                                    <span>74</span>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="order-list">
+                                    <i class="fa-solid fa-envelope-open-text"></i>
+                                    <p>New Comments</p>
+                                    <span>25</span>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-header">
+                                            <h3>Sales</h3>
+                                            <button>
+                                                <i class="fa-solid fa-rotate"></i>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <div id="salesChart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Recent Orders</h3>
+                                <button>
+                                    <i class="fa-solid fa-rotate"></i>
+                                </button>
+                            </div>
+                            <div class="card-body">
+                                <div class="recent-order">
+                                    <div class="order">
+                                        <div class="order-img">
+                                            <a href="#">
+                                                <img src="./assets/images/card-img/cake.png" alt="Cake Image">
+                                                <span>on hold</span>
+                                            </a>
+                                        </div>
+                                        <div class="order-des">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Marble Cake</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Wedding cake with flowers Macarons and blueberries</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">02.04.2018</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+    
+                                    <div class="order">
+                                        <div class="order-img">
+                                            <a href="#">
+                                                <img src="./assets/images/card-img/fat-rascal-img.png" alt="fat-rascal Image">
+                                                <span style="background-color: #4556AC;">processed</span>
+                                            </a>
+                                        </div>
+                                        <div class="order-des">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Fat Rascal</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Cheesecake with chocolate cookies and Cream biscuits</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">01.04.2018</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+    
+                                    <div class="order">
+                                        <div class="order-img">
+                                            <a href="#">
+                                                <img src="./assets/images/card-img/chocolate-cake-img.png" alt="chocolate-cake Image">
+                                                <span style="background-color: #4556AC;">processed</span>
+                                            </a>
+                                        </div>
+                                        <div class="order-des">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Chocolate Cake</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Homemade cheesecake with fresh berries and mint</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">25.03.2018</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+    
+                                    <div class="order">
+                                        <div class="order-img">
+                                            <a href="#">
+                                                <img src="./assets/images/card-img/goose-breast-img.png" alt="goose-breast Image">
+                                                <span style="background-color: #4556AC;">processed</span>
+                                            </a>
+                                        </div>
+                                        <div class="order-des">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Goose Breast</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Chocolate cake with berries</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">21.03.2018</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+    
+                                    <div class="order">
+                                        <div class="order-img">
+                                            <a href="#">
+                                                <img src="./assets/images/card-img/petit-gateau-img.png" alt="petit-gateau Image">
+                                                <span>on hold</span>
+                                            </a>
+                                        </div>
+                                        <div class="order-des">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Petit Gâteau</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Chocolate cake with mascarpone</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">02.06.2018</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+    
+                                    <div class="order">
+                                        <div class="order-img">
+                                            <a href="#">
+                                                <img src="./assets/images/card-img/salzburger-nockerl-img.png" alt="salzburger-nockerl Image">
+                                                <span style="background-color: #4556AC;">processed</span>
+                                            </a>
+                                        </div>
+                                        <div class="order-des">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Salzburger Nockerl</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Wedding cake decorated with donuts and wild berries</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">14.07.2018</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Product Categories</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Cakes</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="cakes">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Marble Cake</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Friutcake</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Chocolate Cake</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Fat Rascal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Financier</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Genoise</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Gingerbread</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Goose Breast</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Parkin</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Salzburger Nockerl</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Soufflé</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Merveilleux</a>
+                                        </li>
+                                    </ul>
+
+                                    <ul>
+                                        <li>
+                                            <a href="#">Streuselkuchen</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Tea Loaf</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Napoleonshat</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Merveilleux</a>
+                                        </li>   
+                                        <li>
+                                            <a href="#">Magdalena</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Cremeschnitte</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Cheesecake</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Bebinca</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Salzburger Nockerl</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Soufflé</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Merveilleux</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Streuselkuchen</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Tickets</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="user">
+                                    <div class="user-list">
+                                        <div class="user-img">
+                                            <a href="#">
+                                                <img src="./assets/images/user-image/p-1.png" alt="User Image">
+                                            </a>
+                                        </div>
+                                        <div class="user-detail">
+                                            <a href="#">
+                                                <p>Mayra Sibley</p>
+                                                <p>09.08.2018 - 12:45</p>
+                                            </a>
+                                        </div>
+                                    </div>
+    
+                                    <div class="user-list">
+                                        <div class="user-img">
+                                            <a href="#">
+                                                <img src="./assets/images/user-image/p-2.png" alt="User Image">
+                                            </a>
+                                        </div>
+                                        <div class="user-detail">
+                                            <a href="#">
+                                                <p>Mimi Carreira</p>
+                                                <p>05.08.2018 - 10:20</p>
+                                            </a>
+                                        </div>
+                                    </div>
+    
+                                    <div class="user-list">
+                                        <div class="user-img">
+                                            <a href="#">
+                                                <img src="./assets/images/user-image/p-3.png" alt="User Image">
+                                            </a>
+                                        </div>
+                                        <div class="user-detail">
+                                            <a href="#">
+                                                <p>Philip Nelms</p>
+                                                <p>09.08.2018 - 09:12</p>
+                                            </a>
+                                        </div>
+                                    </div>
+    
+                                    <div class="user-list">
+                                        <div class="user-img">
+                                            <a href="#">
+                                                <img src="./assets/images/user-image/p-4.png" alt="User Image">
+                                            </a>
+                                        </div>
+                                        <div class="user-detail">
+                                            <a href="#">
+                                                <p>Terese Threadgill</p>
+                                                <p>01.08.2018 - 18:20</p>
+                                            </a>
+                                        </div>
+                                    </div>
+    
+                                    <div class="user-list">
+                                        <div class="user-img">
+                                            <a href="#">
+                                                <img src="./assets/images/user-image/p-5.png" alt="User Image">
+                                            </a>
+                                        </div>
+                                        <div class="user-detail">
+                                            <a href="#">
+                                                <p>Kathryn Mengel</p>
+                                                <p>27.07.2018 - 11:45</p>
+                                            </a>
+                                        </div>
+                                    </div>
+    
+                                    <div class="user-list">
+                                        <div class="user-img">
+                                            <a href="#">
+                                                <img src="./assets/images/user-image/p-2.png" alt="User Image">
+                                            </a>
+                                        </div>
+                                        <div class="user-detail">
+                                            <a href="#">
+                                                <p>Esperanza Lodge</p>
+                                                <p>24.07.2018 - 15:00</p>
+                                            </a>
+                                        </div>
+                                    </div>
+    
+                                    <div class="user-list">
+                                        <div class="user-img">
+                                            <a href="#">
+                                                <img src="./assets/images/user-image/p-1.png" alt="User Image">
+                                            </a>
+                                        </div>
+                                        <div class="user-detail">
+                                            <a href="#">
+                                                <p>Laree Munsch</p>
+                                                <p>24.05.2018 - 11:00</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Calendar</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="event-calender">
+                                    <div id='calendar'></div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Best Sellers</h3>
+                            </div>
+                            <div class="seller-list">
+                                <table class="first">
+                                    <thead style="text-align: left;">
+                                        <tr>
+                                            <th class="col-4">Name</th>
+                                            <th class="col-4">Sales</th>
+                                            <th class="col-4">Stock</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Marble Cake</td>
+                                            <td>1647</td>
+                                            <td>62</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fat Rascal</td>
+                                            <td>1240</td>
+                                            <td>48</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Chocolate Cake</td>
+                                            <td>1080</td>
+                                            <td>57</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Goose Breast</td>
+                                            <td>1014</td>
+                                            <td>41</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Petit Gâteau</td>
+                                            <td>985</td>
+                                            <td>23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Salzburger Nockerl</td>
+                                            <td>962</td>
+                                            <td>34</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <table class="second">
+                                    <thead style="text-align: left;">
+                                        <tr>
+                                            <th class="col-4">Name</th>
+                                            <th class="col-4">Sales</th>
+                                            <th class="col-4">Stock</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-4">Napoleonshat</td>
+                                            <td class="col-4">921</td>
+                                            <td class="col-4">31</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cheesecake</td>
+                                            <td>887</td>
+                                            <td>21</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Financier</td>
+                                            <td>865</td>
+                                            <td>53</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Genoise</td>
+                                            <td>824</td>
+                                            <td>55</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gingerbread</td>
+                                            <td>714</td>
+                                            <td>12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Magdalena</td>
+                                            <td>702</td>
+                                            <td>14</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="page-link">
+                                <div class="all-page">
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="angle-left">
+                                                <i class="fa-solid fa-angle-left"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class="first-page">
+                                                <span>1</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class="second-page">
+                                                <span>2</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span>3</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span>4</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-solid fa-angle-right"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/apexcharts.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Header dropdowns
+            $(".lan").click(function () {
+                $(".lan nav ul").toggleClass("block");
+                $(".lan a").toggleClass("lan-color");
+                $(".nav ul").toggleClass("white");
+            });
+            $(".profile").click(function () {
+                $(".profile nav ul").toggleClass("block");
+            });
+
+
+            // fullscreen btn
+            $(".fullscreen").click(function () {
+                $(".fa-expand").toggleClass("none");
+                $(".fa-minimize").toggleClass("inline");
+            });
+
+            // sidebar slide
+            $(".toggle-menu").click(function () {
+                $(".sidebar").toggleClass("close-sidebar");
+                $(".sub").toggleClass("black");
+                $(".dashboards-dropdown").toggleClass("none");
+                $(".pages-dropdown").toggleClass("none");
+            });
+
+            //sub-menubar dropdown
+            $(".menubar > ul > li.dashboards > a").click(function () {
+                $(".dashboards-dropdown").slideDown(100);
+                $(".pages-dropdown").removeClass("block");
+
+            });
+            $(".menubar > ul > li.pages > a").click(function () {
+                $(".pages-dropdown").addClass("block");
+                $(".dashboards-dropdown").slideUp(100);
+
+            });
+
+            // Table pagination
+            $(".second-page").click(function(){
+                $(".first").toggleClass("none");
+                $(".second").toggleClass("block");
+                $(".first-page").toggleClass("remove-color");
+                $(".second-page").toggleClass("color");
+                $(".angle-left").toggleClass("change");
+            });
+
+        });
+    </script>
+    <script src="./assets/js/index.global.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+                const calendarEl = document.getElementById('calendar')
+                const calendar = new FullCalendar.Calendar(calendarEl, {
+                    initialView: 'dayGridMonth'
+                })
+                calendar.render()
+        });
+    </script>
+    <script>
+        let fullscreen;
+        let fsEnter = document.getElementById("expand");
+        fsEnter.addEventListener("click", function (e) {
+            e.preventDefault();
+            if (!fullscreen) {
+                fullscreen = true;
+                document.documentElement.requestFullscreen();
+            } else {
+                fullscreen = false;
+                document.exitFullscreen();
+            }
+        });
+    </script>
+</body>
+
+</html>
