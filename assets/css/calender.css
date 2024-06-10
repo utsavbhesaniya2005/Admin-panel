@@ -14,7 +14,7 @@
     padding: 0;
 }
 .fc-view-harness{
-    max-height: 450px !important;
+    min-height: 445px !important;
 }
 .fc-scroller{
     overflow: hidden !important;

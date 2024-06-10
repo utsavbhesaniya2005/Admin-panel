@@ -61,3 +61,48 @@ var options = {
 
 var chart = new ApexCharts(document.querySelector("#salesChart"), options);
 chart.render();
+
+
+// Product Chart
+var options = {
+  series: [15, 25, 20],
+  chart: {
+    type: 'donut',
+  },
+  dataLabels: {
+    enabled: false,
+  },
+  tooltip: {
+    fillSeriesColor: false,
+  },
+  labels: ["Cakes", "Cupcakes", "Desserts"],
+  colors: ['#E9D3E5', '#CDD2E7', '#E3CAE0'],
+  legend: {
+    show: true,
+    position: 'bottom',
+    fontSize: '15px',
+    fontWeight: 300,
+    fontFamily: 'Nunito, sans-sarif',
+    labels: {
+      colors: '#3a3a3a',
+    },
+    markers: {
+      width: 20,
+      height: 20,
+      strokeWidth: 1,
+      strokeColor: ['#98128c', '#4556ac', '#98128c'],
+      radius: 18,
+    },
+  },
+  responsive: [{
+    breakpoint: 480,
+    options: {
+      chart: {
+        height: 200,  
+      },
+    },
+  }]
+};
+
+var chart = new ApexCharts(document.querySelector("#productCategory"), options);
+chart.render();

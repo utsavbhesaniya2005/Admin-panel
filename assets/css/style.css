@@ -375,7 +375,17 @@ header {
 }
 .menubar {
     width: 120px;
+    height: 100%;
     padding: 10px 0;
+    overflow: hidden scroll;
+}
+.menubar::-webkit-scrollbar{
+    width: 5px; 
+}
+.menubar:hover::-webkit-scrollbar-thumb{
+    background-color: #e7e7e7;
+    border-radius: 10px;
+    visibility: visible;
 }
 .menubar ul{
     display: flex;
@@ -500,6 +510,14 @@ header {
 .menu ul li:last-child a{
     color: #6c757d;
 }
+.inner-row{
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.inner-row .col-4, .inner-row .col-12{
+    padding-left: 5px;
+    padding-right: 5px;
+}
 .order-list{
     text-align: center;
     background-color: var(--white);
@@ -518,7 +536,7 @@ header {
 .order-list p{
     color: var(--second-description-color);
     font-size: 14px;
-    height: 30px;
+    margin-bottom: 5px;
 }
 .order-list span{
     font-size: 29px;
@@ -526,12 +544,10 @@ header {
     font-weight: 300;
 }
 
-
 /* Sales Chart */
 .apexcharts-toolbar{
     display: none !important;
 }
-
 .card-header h3{
     font-size: 18px;
     color: var(--description-color);
@@ -627,6 +643,7 @@ header {
 .cakes ul li a{
     color: var(--description-color);
     font-size: 14px;
+    font-weight: 300;
 }
 .user{
     height: 300px;
