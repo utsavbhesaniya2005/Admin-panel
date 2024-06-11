@@ -5,7 +5,7 @@ var options = {
     },
   ],
   chart: {
-    height: 265,
+    height: 270,
     type: 'line',
     dropShadow: {
       enabled: true,
@@ -67,6 +67,7 @@ chart.render();
 var options = {
   series: [15, 25, 20],
   chart: {
+    height: 310,
     type: 'donut',
   },
   dataLabels: {
