@@ -419,9 +419,6 @@ header {
 .dashboards-dropdown, .pages-dropdown.block{
     display: block;
 }
-.pages-dropdown, .apps-dropdown{
-    display: none;
-}
 .dashboards-dropdown, .pages-dropdown{
     padding: 16px 0;
 }
@@ -438,28 +435,29 @@ header {
     margin-bottom: 10px;
     font-size: 13px;
 }
-.dashboards-dropdown li a i, .pages-dropdown li a i, .apps-dropdown li a i, .ui-dropdown li a i{
+.dashboards-dropdown li a i, .pages-dropdown li a i, .apps-dropdown li a i, .ui-dropdown li a i, .menus-dropdown li a i{
     color: var(--second-description-color);
     vertical-align: middle;
 }
-.dashboards-dropdown li a i,  .apps-dropdown li a i, .ui-dropdown li a i{
+.dashboards-dropdown li a i,  .apps-dropdown li a i, .menus-dropdown li:first-child a i{
     font-size: 17px;
     margin-right: 15px;
 }
-.pages-dropdown li a,  .apps-dropdown li a i, .ui-dropdown li a i{
+.pages-dropdown > li > a,  .ui-dropdown > li > a, .menus-dropdown > li:last-child > a{
     color: var(--second-description-color);
     opacity: 0.5;
 }
-.pages-dropdown li a i, .ui-subdropdown ul li a i{
+.pages-dropdown li a i, .ui-dropdown li a i, .menus-dropdown li:last-child a i{
     font-size: 20px;
     margin-right: 15px;
 }
-.pages-subdropdown ul li a, .pages-subdropdown ul li a i, .ui-subdropdown ul li a i{
+.pages-subdropdown ul li a i, .ui-subdropdown ul li a i, .menus-subdropdown ul li a i{
     color: var(--description-color);
-    opacity: 1;
-}
-.pages-subdropdown ul li a i, .ui-subdropdown ul li a i{
+    opacity: 0.8;
     font-size: 17px;
+}
+.pages-dropdown, .apps-dropdown, .ui-dropdown, .menus-dropdown{
+    display: none;
 }
 
 /* Page Body */
