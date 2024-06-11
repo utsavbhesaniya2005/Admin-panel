@@ -379,10 +379,10 @@ header {
     padding: 10px 0;
     overflow: hidden scroll;
 }
-.menubar::-webkit-scrollbar{
+.menubar::-webkit-scrollbar, .sub-menubar::-webkit-scrollbar, .recent-order::-webkit-scrollbar, .user::-webkit-scrollbar{
     width: 5px; 
 }
-.menubar:hover::-webkit-scrollbar-thumb{
+.menubar:hover::-webkit-scrollbar-thumb, .sub-menubar:hover::-webkit-scrollbar-thumb, .recent-order:hover::-webkit-scrollbar-thumb, .sub-menubar:hover::-webkit-scrollbar-thumb, .user:hover::-webkit-scrollbar-thumb, .sub-menubar:hover::-webkit-scrollbar-thumb{
     background-color: #e7e7e7;
     border-radius: 10px;
     visibility: visible;
@@ -401,6 +401,9 @@ header {
     color: var(--description-color);
     border-bottom: 1px solid #f3f3f3;
 }
+.menubar ul li:last-child a{
+    border-bottom: none;
+}
 .menubar ul li a i{
     font-size: 32px;
     line-height: 41px;
@@ -410,11 +413,13 @@ header {
     width: calc(350px - 120px);
     padding: 10px 0;
     border-left: 1px solid #f3f3f3; 
+    height: 100%;
+    overflow: hidden scroll;
 }
 .dashboards-dropdown, .pages-dropdown.block{
     display: block;
 }
-.pages-dropdown{
+.pages-dropdown, .apps-dropdown{
     display: none;
 }
 .dashboards-dropdown, .pages-dropdown{
@@ -433,15 +438,15 @@ header {
     margin-bottom: 10px;
     font-size: 13px;
 }
-.dashboards-dropdown li a i, .pages-dropdown li a i{
+.dashboards-dropdown li a i, .pages-dropdown li a i, .apps-dropdown li a i{
     color: var(--second-description-color);
     vertical-align: middle;
 }
-.dashboards-dropdown li a i{
+.dashboards-dropdown li a i,  .apps-dropdown li a i{
     font-size: 17px;
     margin-right: 15px;
 }
-.pages-dropdown li a{
+.pages-dropdown li a,  .apps-dropdown li a i{
     color: var(--second-description-color);
     opacity: 0.5;
 }
@@ -463,6 +468,7 @@ header {
     padding: 55px 60px;
     margin-left: 350px;
     margin-top: 88px;
+    border-bottom: 1px solid var(--border-color);
     transition: all 0.3s ease-in-out;
 }
 .sidebar.close-sidebar~.page-body {
@@ -566,15 +572,7 @@ header {
 }
 .recent-order{
     max-height: 502px;
-    overflow-y: scroll;
-}
-.recent-order::-webkit-scrollbar, .user::-webkit-scrollbar{
-    width: 5px;  
-}
-.recent-order:hover::-webkit-scrollbar-thumb, .user:hover::-webkit-scrollbar-thumb{
-    background-color: var(--border-color);
-    border-radius: 10px;
-    visibility: visible;
+    overflow: hidden scroll;
 }
 .order{
     display: flex;
@@ -647,7 +645,7 @@ header {
 }
 .user{
     height: 270px;
-    overflow-y: scroll;
+    overflow: hidden scroll;
 }
 .user-list{
     display: flex;
@@ -753,4 +751,8 @@ table td{
 .angle-left.change{
     background-color: var(--main-color);
     color: var(--white);
+}
+.footer{
+    
+    width: 100%;
 }
