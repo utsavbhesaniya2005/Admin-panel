@@ -1278,6 +1278,31 @@
                 </div>
             </div>
         </div>
+
+        <footer>
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-content">
+                        <div class="strategies">
+                            <p>ColoredStrategies 2021</p>
+                        </div>
+                        <div class="reviews">
+                            <ul>
+                                <li>
+                                    <a href="#">Review</a>
+                                </li>
+                                <li>
+                                    <a href="#">Purchase</a>
+                                </li>
+                                <li>
+                                    <a href="#">Docs</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/apexcharts.js"></script>
@@ -1290,20 +1315,35 @@
             // language dropdown
             $(".lan").click(function () {
                 $(".lan nav ul").toggleClass("block");
+                $(".grid nav ul").removeClass("block"); 
+                $(".notification nav ul").removeClass("block");
+                $(".profile nav ul").removeClass("block");
                 $(".lan a").toggleClass("lan-color");
-                $(".nav ul").toggleClass("white");
+                $(".lan ul").toggleClass("white");
             });
             // grid-dropdown
             $(".grid").click(function () {
                 $(".grid nav ul").toggleClass("block"); 
+                $(".lan nav ul").removeClass("block");
+                $(".lan a").removeClass("lan-color");
+                $(".notification nav ul").removeClass("block");
+                $(".profile nav ul").removeClass("block");
             });
             // notification-dropdown
             $(".notification").click(function(){
                 $(".notification nav ul").toggleClass("block");
+                $(".lan nav ul").removeClass("block");
+                $(".lan a").removeClass("lan-color");
+                $(".grid nav ul").removeClass("block"); 
+                $(".profile nav ul").removeClass("block");
             });
             // profile dropdown
             $(".profile").click(function () {
                 $(".profile nav ul").toggleClass("block");
+                $(".notification nav ul").removeClass("block");
+                $(".lan nav ul").removeClass("block");
+                $(".lan a").removeClass("lan-color");
+                $(".grid nav ul").removeClass("block");
             });
 
 

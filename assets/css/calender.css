@@ -11,7 +11,10 @@
     padding: 15px 5px;
 }
 .fc-daygrid-day-frame{
-    padding: 0;
+    padding: 1;
+}
+.fc-scrollgrid-section th{
+    border-right: none;
 }
 .fc-view-harness{
     min-height: 445px !important;
@@ -37,4 +40,11 @@
 }
 .fc-daygrid-day-number{
     color: var(--description-color);
+}
+.fc-theme-standard td{    
+    border: 1px solid #f3f3f3;
+    border-bottom: none;
+}
+.fc-theme-standard td:last-child{
+    border-right: none;
 }
