@@ -70,8 +70,7 @@
                         </nav>
                     </div>
                     <div class="buy">
-                        <a
-                            href="https://themeforest.net/cart/configure_before_adding/22544383?license=regular&irgwc=1&clickid=VJM0kU21bxyKRudUFv3RSwwXUkHXVZVBqSOl2A0&iradid=275988&irpid=1324459&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_1324459&utm_medium=affiliate&utm_source=impact_radius">buy</a>
+                        <a href="https://themeforest.net/cart/configure_before_adding/22544383?license=regular&irgwc=1&clickid=VJM0kU21bxyKRudUFv3RSwwXUkHXVZVBqSOl2A0&iradid=275988&irpid=1324459&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_1324459&utm_medium=affiliate&utm_source=impact_radius">buy</a>
                     </div>
                 </div>
                 <div class="logo">
@@ -97,6 +96,36 @@
                                     <rect x="3" y="14" width="7" height="7"></rect>
                                 </svg>
                             </a>
+                            <nav>
+                                <ul>
+                                    <li class="dropdown">
+                                        <a href="index.html">
+                                            <i class="fa-solid fa-store"></i>
+                                            <span>Dashboards</span>
+                                        </a>
+                                        <a href="index.html">
+                                            <i class="fa-solid fa-paperclip"></i><br>
+                                            <span>UI</span>
+                                        </a>
+                                        <a href="index.html">
+                                            <i class="fa-solid fa-chart-simple"></i>
+                                            <span>Charts</span>
+                                        </a>
+                                        <a href="index.html">
+                                            <i class="fa-regular fa-comment"></i><br>
+                                            <span>Chat</span>
+                                        </a>
+                                        <a href="index.html">
+                                            <i class="fa-solid fa-chart-line"></i>
+                                            <span>Survey</span>
+                                        </a>
+                                        <a href="index.html">
+                                            <i class="fa-solid fa-list-check"></i><br>
+                                            <span>To-do List</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
                         <div class="notification">
                             <a href="javascript:void(0);">
@@ -108,6 +137,33 @@
                                 </svg>
                                 <span>3</span>
                             </a>
+                            <nav>
+                                <ul>
+                                    <li class="dropdown">
+                                        <a href="index.html">
+                                            <div class="user-list">
+                                                <div class="user-img">
+                                                    <a href="#">
+                                                        <img src="./assets/images/user-image/p-1.png" alt="User Image">
+                                                    </a>
+                                                </div>
+                                                <div class="user-detail">
+                                                    <a href="#">
+                                                        <p>Joisse Kaycee just sent a new comment!</p>
+                                                        <p>09.04.2018 - 12:45</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- <li class="dropdown">
+                                        <a href="index.html">Features</a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="index.html">History</a>
+                                    </li> -->
+                                </ul>
+                            </nav>
                         </div>
                         <div class="fullscreen">
                             <a href="javascript:void(0);" id="expand">
@@ -1170,7 +1226,7 @@
                             </div>
                         </div>
                     </div>
-
+                    
                     <div class="col-12">
                         
                     </div>
@@ -1185,11 +1241,18 @@
     <script>
         $(document).ready(function () {
             // Header dropdowns
+
+            // language dropdown
             $(".lan").click(function () {
                 $(".lan nav ul").toggleClass("block");
                 $(".lan a").toggleClass("lan-color");
                 $(".nav ul").toggleClass("white");
             });
+            // grid-dropdown
+            $(".grid").click(function () {
+                $(".grid nav ul").toggleClass("block"); 
+            });
+            // profile dropdown
             $(".profile").click(function () {
                 $(".profile nav ul").toggleClass("block");
             });
