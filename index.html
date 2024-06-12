@@ -144,7 +144,7 @@
                                             <div class="user-list">
                                                 <div class="user-img">
                                                     <a href="#">
-                                                        <img src="./assets/images/user-image/p-1.png" alt="User Image">
+                                                        <img src="./assets/images/product/comment.png" alt="User Image">
                                                     </a>
                                                 </div>
                                                 <div class="user-detail">
@@ -156,12 +156,57 @@
                                             </div>
                                         </a>
                                     </li>
-                                    <!-- <li class="dropdown">
-                                        <a href="index.html">Features</a>
+                                    <li class="dropdown">
+                                        <a href="index.html">
+                                            <div class="user-list">
+                                                <div class="user-img">
+                                                    <a href="#">
+                                                        <img src="./assets/images/product/product-img-1.png" alt="Product Image">
+                                                    </a>
+                                                </div>
+                                                <div class="user-detail">
+                                                    <a href="#">
+                                                        <p>1 item is out of stock!</p>
+                                                        <p>09.04.2018 - 12:45</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </li>
                                     <li class="dropdown">
-                                        <a href="index.html">History</a>
-                                    </li> -->
+                                        <a href="index.html">
+                                            <div class="user-list">
+                                                <div class="user-img">
+                                                    <a href="#">
+                                                        <img src="./assets/images/product/product-img-2.png" alt="Product Image">
+                                                    </a>
+                                                </div>
+                                                <div class="user-detail">
+                                                    <a href="#">
+                                                        <p>New order received! It is total $147,20.</p>
+                                                        <p>09.04.2018 - 12:45</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="index.html">
+                                            <div class="user-list">
+                                                <div class="user-img">
+                                                    <a href="#">
+                                                        <img src="./assets/images/product/product-img-3.png" alt="Product Image">
+                                                    </a>
+                                                </div>
+                                                <div class="user-detail">
+                                                    <a href="#">
+                                                        <p>3 items just added to wish list by a user!</p>
+                                                        <p>09.04.2018 - 12:45</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
                                 </ul>
                             </nav>
                         </div>
@@ -1252,6 +1297,10 @@
             $(".grid").click(function () {
                 $(".grid nav ul").toggleClass("block"); 
             });
+            // notification-dropdown
+            $(".notification").click(function(){
+                $(".notification nav ul").toggleClass("block");
+            });
             // profile dropdown
             $(".profile").click(function () {
                 $(".profile nav ul").toggleClass("block");
@@ -1275,14 +1324,40 @@
             //sub-menubar dropdown
             $(".menubar > ul > li.dashboards > a").click(function () {
                 $(".dashboards-dropdown").slideDown(100);
-                $(".pages-dropdown").removeClass("block");
-
+                $(".pages-dropdown").slideUp(10);
+                $(".apps-dropdown").slideUp(10);
+                $(".ui-dropdown").slideUp(10);
+                $(".menus-dropdown").slideUp(10);
             });
             $(".menubar > ul > li.pages > a").click(function () {
-                $(".pages-dropdown").addClass("block");
-                $(".dashboards-dropdown").slideUp(100);
-
+                $(".pages-dropdown").slideDown(100);
+                $(".dashboards-dropdown").slideUp(10);
+                $(".apps-dropdown").slideUp(10);
+                $(".ui-dropdown").slideUp(10);
+                $(".menus-dropdown").slideUp(10);
             });
+            $(".menubar > ul > li.apps > a").click(function () {
+                $(".apps-dropdown").slideDown(100);
+                $(".dashboards-dropdown").slideUp(10);
+                $(".pages-dropdown").slideUp(10);
+                $(".ui-dropdown").slideUp(10);
+                $(".menus-dropdown").slideUp(10);
+            });
+            $(".menubar > ul > li.ui > a").click(function () {
+                $(".ui-dropdown").slideDown(100);
+                $(".dashboards-dropdown").slideUp(10);
+                $(".pages-dropdown").slideUp(10);
+                $(".apps-dropdown").slideUp(10);
+                $(".menus-dropdown").slideUp(10);
+            });
+            $(".menubar > ul > li.menus > a").click(function () {
+                $(".menus-dropdown").slideDown(100);
+                $(".dashboards-dropdown").slideUp(10);
+                $(".pages-dropdown").slideUp(10);
+                $(".apps-dropdown").slideUp(10);
+                $(".ui-dropdown").slideUp(10);
+            });
+            
 
             // Table pagination
             $(".second-page").click(function(){
