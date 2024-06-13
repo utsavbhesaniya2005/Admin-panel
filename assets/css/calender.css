@@ -11,9 +11,10 @@
     padding: 15px 5px;
 }
 .fc-daygrid-day-frame{
-    padding: 1;
+    padding: 0;
 }
 .fc-scrollgrid-section th{
+    border: 1px solid  #f3f3f3;
     border-right: none;
 }
 .fc-view-harness{
