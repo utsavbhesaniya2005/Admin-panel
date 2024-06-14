@@ -535,6 +535,9 @@ input:checked + label:after {
 .menubar ul li:last-child a{
     border-bottom: none;
 }
+.menubar ul li a:focus::after{
+    display: block;
+}
 .menubar ul li a i{
     font-size: 32px;
     line-height: 41px;
@@ -907,6 +910,11 @@ footer{
     border-top: 1px solid var(--border-color);
     margin-left: 350px;
     padding: 35px 60px;
+    transition: all 0.3s ease-in-out;
+}
+footer.close-sidebar{
+    width: calc(100% - 120px);
+    margin-left: 120px;
 }
 .footer-content{
     display: flex;
