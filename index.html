@@ -19,13 +19,94 @@
      <link rel="stylesheet" href="./assets/css/calender.css">
 
     <!-- Css Link -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" id="colorChange" href="./assets/css/style.css">
 
 </head>
 
 <!-- https://gogo-react.coloredstrategies.com/app/dashboards/ecommerce -->
 
 <body>
+    <div class="wizard-setting">
+        <a href="#">
+            <i class="fa-solid fa-wand-sparkles"></i>
+        </a>
+    </div>
+    <div class="theme-colors">
+        <div class="change-color">
+            <p>Light Theme</p>
+            <div class="colors">
+                <a href="#" class="bluenavy">
+                    <span></span>
+                </a>
+                <a href="#" class="blueyale">
+                    <span></span>
+                </a>
+                <a href="#" class="blueolympic">
+                    <span></span>
+                </a>
+                <a href="#" class="greenmoss">
+                    <span></span>
+                </a>
+                <a href="#" class="greenlime">
+                    <span></span>
+                </a>
+            </div>
+            <div class="colors">
+                <a href="javascript:void(0);" class="purplemonster" data-path="./assets/css/style.css">
+                    <span></span>
+                </a>
+                <a href="#" class="orangecarrot">
+                    <span></span>
+                </a>
+                <a href="#" class="redruby">
+                    <span></span>
+                </a>
+                <a href="#" class="yellowgranola">
+                    <span></span>
+                </a>
+                <a href="#" class="greysteel">
+                    <span></span>
+                </a>
+            </div>  
+        </div>
+        <div class="change-color">
+            <p>Dark Theme</p>
+            <div class="colors">
+                <a href="#" class="bluenavy">
+                    <span></span>
+                </a>
+                <a href="#" class="blueyale">
+                    <span></span>
+                </a>
+                <a href="#" class="blueolympic">
+                    <span></span>
+                </a>
+                <a href="#" class="greenmoss">
+                    <span></span>
+                </a>
+                <a href="#" class="greenlime">
+                    <span></span>
+                </a>
+            </div>
+            <div class="colors">
+                <a href="javascript:void(0);" class="dark-purplemonster" data-path="./assets/css/dark.css">
+                    <span></span>
+                </a>
+                <a href="#" class="orangecarrot">
+                    <span></span>
+                </a>
+                <a href="#" class="redruby">
+                    <span></span>
+                </a>
+                <a href="#" class="yellowgranola">
+                    <span></span>
+                </a>
+                <a href="#" class="greysteel">
+                    <span></span>
+                </a>
+            </div>  
+        </div>
+    </div>
     <div class="page-wrapper">
         <header>
             <div class="row items-center justify-between">
@@ -250,7 +331,7 @@
                 <div class="menubar">
                     <ul>
                         <li class="dashboards">
-                            <a href="#">
+                            <a href="#" class="dashboard">
                                 <i class="fa-solid fa-store"></i>
                                 <span>Dashboards</span>
                             </a>
@@ -307,7 +388,7 @@
                                 <span>Analytics</span>
                             </a>
                         </li>
-                        <li>
+                        <li class="main">
                             <a href="#">
                                 <i class="fa-solid fa-cart-shopping"></i>
                                 <span>Ecommerce</span>
@@ -321,12 +402,12 @@
                         </li>
                     </ul>
                     <ul class="pages-dropdown">
-                        <li>
+                        <li class="authorization">
                             <a href="#">
                                 <i class="fa-solid fa-angle-down"></i>
                                 <span>Authorization</span>
                             </a>
-                            <nav class="pages-subdropdown">
+                            <nav class="authorization-subdropdown">
                                 <ul>
                                     <li>
                                         <a href="#">
@@ -355,12 +436,12 @@
                                 </ul>
                             </nav>
                         </li>
-                        <li>
+                        <li class="product">
                             <a href="#">
                                 <i class="fa-solid fa-angle-down"></i>
                                 <span>Product</span>
                             </a>
-                            <nav class="pages-subdropdown">
+                            <nav class="product-subdropdown">
                                 <ul>
                                     <li>
                                         <a href="#">
@@ -395,12 +476,12 @@
                                 </ul>
                             </nav>
                         </li>
-                        <li>
+                        <li class="profile1">
                             <a href="#">
                                 <i class="fa-solid fa-angle-down"></i>
                                 <span>Profile</span>
                             </a>
-                            <nav class="pages-subdropdown">
+                            <nav class="profile1-subdropdown">
                                 <ul>
                                     <li>
                                         <a href="#">
@@ -417,12 +498,12 @@
                                 </ul>
                             </nav>
                         </li>
-                        <li>
+                        <li class="blog">
                             <a href="#">
                                 <i class="fa-solid fa-angle-down"></i>
                                 <span>Blog</span>
                             </a>
-                            <nav class="pages-subdropdown">
+                            <nav class="blog-subdropdown">
                                 <ul>
                                     <li>
                                         <a href="#">
@@ -439,12 +520,12 @@
                                 </ul>
                             </nav>
                         </li>
-                        <li>
+                        <li class="miscellaneous">
                             <a href="#">
                                 <i class="fa-solid fa-angle-down"></i>
                                 <span>Miscellaneous</span>
                             </a>
-                            <nav class="pages-subdropdown">
+                            <nav class="miscellaneous-subdropdown">
                                 <ul>
                                     <li>
                                         <a href="#">
@@ -513,12 +594,12 @@
                         </li>
                     </ul>
                     <ul class="ui-dropdown">
-                        <li>
+                        <li class="forms">
                             <a href="#">
                                 <i class="fa-solid fa-angle-down"></i>
                                 <span>Forms</span>
                             </a>
-                            <nav class="ui-subdropdown">
+                            <nav class="forms-subdropdown">
                                 <ul>
                                     <li>
                                         <a href="#">
@@ -547,12 +628,12 @@
                                 </ul>
                             </nav>
                         </li>
-                        <li>
+                        <li class="components">
                             <a href="#">
                                 <i class="fa-solid fa-angle-down"></i>
                                 <span>Components</span>
                             </a>
-                            <nav class="ui-subdropdown">
+                            <nav class="components-subdropdown">
                                 <ul>
                                     <li>
                                         <a href="#">
@@ -673,7 +754,7 @@
                                 <span>Menu Types</span>
                             </a>
                         </li>
-                        <li>
+                        <li class="menus">
                             <a href="#">
                                 <i class="fa-solid fa-angle-down"></i>
                                 <span>Menu Levels</span>
@@ -1265,6 +1346,22 @@
 
     <script>
         $(document).ready(function () {
+
+            // Theme Color Change
+            $(".wizard-setting > a").click(function(){
+                $(this).toggleClass("slide");
+                $(".theme-colors").toggleClass("left");
+            }); 
+            $(".purplemonster").click(function(){
+                var path = $(this).data('path');
+                $("#colorChange").attr('href',path); 
+            });
+            $(".dark-purplemonster").click(function(){
+                var path = $(this).data('path');
+                $("#colorChange").attr('href',path);
+            });
+
+
             // Header dropdowns
 
             // language dropdown
@@ -1353,15 +1450,44 @@
                 $(".apps-dropdown").slideUp(10);
                 $(".ui-dropdown").slideUp(10);
             });
-            
+            $(".authorization a").click(function(){
+                $(".authorization-subdropdown").slideToggle(300);
+                $(".authorization > a > i").toggleClass("rotate");
+            });
+            $(".product a").click(function(){
+                $(".product-subdropdown").slideToggle(300);
+                $(".product > a > i").toggleClass("rotate");
+            });
+            $(".profile1 a").click(function(){
+                $(".profile1-subdropdown").slideToggle(300);
+                $(".profile1 > a > i").toggleClass("rotate");
+            });
+            $(".blog a").click(function(){
+                $(".blog-subdropdown").slideToggle(300);
+                $(".blog > a > i").toggleClass("rotate");
+            });
+            $(".miscellaneous a").click(function(){
+                $(".miscellaneous-subdropdown").slideToggle(300);
+                $(".miscellaneous > a > i").toggleClass("rotate");
+            });
+            $(".forms a").click(function(){
+                $(".forms-subdropdown").slideToggle(300);
+                $(".forms > a > i").toggleClass("rotate");
+            });
+            $(".components a").click(function(){
+                $(".components-subdropdown").slideToggle(300);
+                $(".components > a > i").toggleClass("rotate");
+            });
+            $(".menus-dropdown .menus a").click(function(){
+                $(".menus-subdropdown").slideToggle(300);
+                $(".menus-dropdown .menus > a > i").toggleClass("rotate");
+            });
 
-            // Table pagination
-            $(".second-page").click(function(){
-                $(".first").toggleClass("none");
-                $(".second").toggleClass("block");
-                $(".first-page").toggleClass("remove-color");
-                $(".second-page").toggleClass("color");
-                $(".angle-left").toggleClass("change");
+
+            // menubar focus
+            $(".pages a").click(function(){
+                $(".menubar ul li.dashboards a").addClass("active");
+                $(".menubar ul li .active:after").addClass("none");
             });
 
         });
