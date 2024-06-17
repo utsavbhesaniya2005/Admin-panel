@@ -388,7 +388,7 @@
                                 <span>Analytics</span>
                             </a>
                         </li>
-                        <li class="main">
+                        <li>
                             <a href="#">
                                 <i class="fa-solid fa-cart-shopping"></i>
                                 <span>Ecommerce</span>
@@ -1450,35 +1450,35 @@
                 $(".apps-dropdown").slideUp(10);
                 $(".ui-dropdown").slideUp(10);
             });
-            $(".authorization a").click(function(){
+            $(".authorization > a").click(function(){
                 $(".authorization-subdropdown").slideToggle(300);
                 $(".authorization > a > i").toggleClass("rotate");
             });
-            $(".product a").click(function(){
+            $(".product > a").click(function(){
                 $(".product-subdropdown").slideToggle(300);
                 $(".product > a > i").toggleClass("rotate");
             });
-            $(".profile1 a").click(function(){
+            $(".profile1 > a").click(function(){
                 $(".profile1-subdropdown").slideToggle(300);
                 $(".profile1 > a > i").toggleClass("rotate");
             });
-            $(".blog a").click(function(){
+            $(".blog > a").click(function(){
                 $(".blog-subdropdown").slideToggle(300);
                 $(".blog > a > i").toggleClass("rotate");
             });
-            $(".miscellaneous a").click(function(){
+            $(".miscellaneous > a").click(function(){
                 $(".miscellaneous-subdropdown").slideToggle(300);
                 $(".miscellaneous > a > i").toggleClass("rotate");
             });
-            $(".forms a").click(function(){
+            $(".forms > a").click(function(){
                 $(".forms-subdropdown").slideToggle(300);
                 $(".forms > a > i").toggleClass("rotate");
             });
-            $(".components a").click(function(){
+            $(".components > a").click(function(){
                 $(".components-subdropdown").slideToggle(300);
                 $(".components > a > i").toggleClass("rotate");
             });
-            $(".menus-dropdown .menus a").click(function(){
+            $(".menus-dropdown > .menus > a").click(function(){
                 $(".menus-subdropdown").slideToggle(300);
                 $(".menus-dropdown .menus > a > i").toggleClass("rotate");
             });
@@ -1486,6 +1486,26 @@
 
             // menubar focus
             $(".pages a").click(function(){
+                $(".menubar ul li.dashboards a").addClass("active");
+                $(".menubar ul li .active:after").addClass("none");
+            });
+            $(".apps a").click(function(){
+                $(".menubar ul li.dashboards a").addClass("active");
+                $(".menubar ul li .active:after").addClass("none");
+            });
+            $(".ui a").click(function(){
+                $(".menubar ul li.dashboards a").addClass("active");
+                $(".menubar ul li .active:after").addClass("none");
+            });
+            $(".menus a").click(function(){
+                $(".menubar ul li.dashboards a").addClass("active");
+                $(".menubar ul li .active:after").addClass("none");
+            });
+            $(".blank-page a").click(function(){
+                $(".menubar ul li.dashboards a").addClass("active");
+                $(".menubar ul li .active:after").addClass("none");
+            });
+            $(".docs a").click(function(){
                 $(".menubar ul li.dashboards a").addClass("active");
                 $(".menubar ul li .active:after").addClass("none");
             });

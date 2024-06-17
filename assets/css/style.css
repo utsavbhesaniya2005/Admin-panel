@@ -674,7 +674,7 @@ header {
     content: '';
     position: absolute;
     top: 50%;
-    transform: translatefY(-50%);
+    transform: translateY(-50%);
     left: -16px;
     height: 4px;
     width: 4px;
@@ -682,10 +682,10 @@ header {
     border-radius: 50%;
     display: none;
 }
-.sub-menubar ul li.main::after{
+.sub-menubar ul.dashboards-dropdown li:nth-child(3):after{
     display: block;
 }
-.sub-menubar ul li.main a, .sub-menubar ul li.main a i{
+.sub-menubar ul.dashboards-dropdown li:nth-child(3) a, .sub-menubar ul.dashboards-dropdown li:nth-child(3) a i{
     color: var(--main-color);
 }
 .sub-menubar ul li a{
